@@ -44,11 +44,11 @@ export default function ContactPage() {
             <textarea value={message} onChange={e => setMessage(e.target.value)} placeholder="Tell me about your project or problem…" rows={6} required />
           </label>
 
-          <div className="actions responsive">
-            <button type="submit" className="button primary">Send inquiry</button>
-            <a className="button secondary" href={`mailto:${YOUR_EMAIL}`}>Email me directly</a>
-          </div>
-          <p className="muted small">This form opens your email client with a pre-filled draft for reliability. No server required.</p>
+          <div className="actions side-by-side">
+  <button type="submit" className="button primary">Send inquiry</button>
+  <a className="button secondary" href={`mailto:${YOUR_EMAIL}`}>Email me directly</a>
+</div>
+<p className="muted small details">This form opens your email client with a pre-filled draft for reliability. No server required.</p>
         </form>
       </div>
     </section>

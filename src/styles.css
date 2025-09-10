@@ -113,10 +113,33 @@ input:focus, textarea:focus { outline: none; border-color: var(--accent); }
 }
 
 
-/* Responsive action buttons */
-.actions.responsive { display: flex; gap: 10px; flex-wrap: wrap; }
 .button { min-height: 40px; padding: 12px 14px; line-height: 1; }
 @media (max-width: 480px) {
   .actions.responsive { flex-direction: column; align-items: stretch; }
   .actions.responsive .button { width: 100%; justify-content: center; }
+}
+
+
+/* Side-by-side contact form buttons */
+.actions.side-by-side {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+.actions.side-by-side .button {
+  flex: 1;
+  justify-content: center;
+}
+.details { margin-top: 4px; }
+@media (max-width: 480px) {
+  .actions.side-by-side { flex-direction: column; }
+}
+
+/* Action buttons row: side-by-side on desktop, stack on small screens */
+.actions.row { display: flex; gap: 12px; align-items: stretch; flex-wrap: nowrap; }
+.actions.row .button { flex: 1 1 220px; justify-content: center; min-height: 48px; padding: 14px 16px; font-weight: 600; }
+@media (max-width: 640px) {
+  .actions.row { flex-direction: column; }
+  .actions.row .button { width: 100%; }
 }
