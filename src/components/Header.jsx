@@ -9,7 +9,7 @@ export default function Header() {
       </div>
       <nav>
         <a href="#projects">Projects</a>
-        <a href="mailto:clarencedaing@gmail.com">Contact</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
   )

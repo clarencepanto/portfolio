@@ -37,17 +37,11 @@ nav a {
 }
 nav a:hover { color: var(--text); }
 
-.hero {
-  padding: 36px 0 12px;
-}
+.hero { padding: 36px 0 12px; }
 .hero h1 { font-size: 2.2rem; margin: 0 0 8px; }
 .hero p { color: var(--muted); margin: 0; max-width: 60ch; }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 16px;
-}
+.grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
 
 .card {
   background: var(--card);
@@ -56,13 +50,8 @@ nav a:hover { color: var(--text); }
   padding: 16px;
 }
 
-.project {
-  grid-column: span 12;
-}
-
-@media (min-width: 720px) {
-  .project { grid-column: span 6; }
-}
+.project { grid-column: span 12; }
+@media (min-width: 720px) { .project { grid-column: span 6; } }
 
 .project .thumb {
   aspect-ratio: 16 / 9;
@@ -73,22 +62,13 @@ nav a:hover { color: var(--text); }
   overflow: hidden;
   border: 1px solid var(--border);
 }
-
-.project .thumb img {
-  width: 100%; height: 100%; object-fit: cover;
-}
+.project .thumb img { width: 100%; height: 100%; object-fit: cover; }
 
 .project h3 { margin: 12px 0 8px; font-size: 1.1rem; }
 .project p { margin: 0 0 12px; color: var(--muted); }
 
 .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
-.badge {
-  font-size: 0.75rem;
-  padding: 6px 10px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  color: var(--muted);
-}
+.badge { font-size: 0.75rem; padding: 6px 10px; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); }
 
 .actions { display: flex; gap: 10px; }
 .button {
@@ -111,4 +91,23 @@ footer {
   border-top: 1px solid var(--border);
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+/* Contact */
+.contact h2 { margin: 0 0 6px; }
+.muted { color: var(--muted); }
+.small { font-size: 0.85rem; }
+.contact .grid { grid-template-columns: repeat(12, 1fr); gap: 16px; }
+.contact-info { grid-column: span 12; }
+.contact-form { grid-column: span 12; display: grid; grid-template-columns: repeat(12, 1fr); gap: 12px; }
+.contact-form label { display: grid; grid-template-columns: 1fr; grid-column: span 6; }
+.contact-form label.full { grid-column: span 12; }
+.contact-form span { font-size: 0.85rem; color: var(--muted); margin-bottom: 6px; }
+input, textarea { width: 100%; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--border); background: #0f0f12; color: var(--text); }
+input:focus, textarea:focus { outline: none; border-color: var(--accent); }
+.info-list { list-style: none; padding: 0; margin: 0 0 12px; }
+.info-list li { margin: 6px 0; }
+@media (min-width: 720px) {
+  .contact-info { grid-column: span 5; }
+  .contact-form { grid-column: span 7; }
 }

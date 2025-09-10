@@ -1,7 +1,7 @@
 {
   "name": "portfolio-react-simple",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,6 +14,6 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",
-    "vite": "^7.1.5"
+    "vite": "^5.4.0"
   }
 }
