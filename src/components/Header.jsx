@@ -8,8 +8,8 @@ export default function Header() {
         <span className="brand">Clarence Daing</span>
       </div>
       <nav>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="/#projects">Projects</a>
+        <a href="/contact">Contact</a>
       </nav>
     </header>
   )
